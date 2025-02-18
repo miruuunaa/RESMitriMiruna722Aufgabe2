@@ -67,6 +67,16 @@ public class Controller {
         return charakterenIRepository.getAll();
     }
 
+
+    /**
+     * Filter all charakteren by their region.
+     * The method retrieves all charakteren from the repository, sorts them based
+     * on the region, and then prints the sorted list to the console.
+     *
+     * <p>
+     * The sorting is performed using a comparator that compares the region
+     * </p>
+     */
     public void filterCharakterenByRegion(String region) {
         for (Charakteren charakteren : getAllCharakteren()) {
             if (charakteren.getRegion().equalsIgnoreCase(region))
